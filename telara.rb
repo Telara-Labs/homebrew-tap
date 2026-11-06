@@ -5,20 +5,20 @@
 class Telara < Formula
   desc "Telara CLI — manage your MCP configurations"
   homepage "https://telara.dev"
-  version "0.1.51"
+  version "0.1.52"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Telara-Labs/Telara-CLI/releases/download/v0.1.51/telara_0.1.51_darwin_amd64.tar.gz"
-      sha256 "08e68a64eb88a2c9fcfccd34797e651d1fdbc3fac6310be58c84cab647db72e7"
+      url "https://github.com/Telara-Labs/Telara-CLI/releases/download/v0.1.52/telara_0.1.52_darwin_amd64.tar.gz"
+      sha256 "ab4f3b300f2a7e1305d61d04876788f2a0c0d67217718ad06102c391fd893e9c"
 
       define_method(:install) do
         bin.install "telara"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Telara-Labs/Telara-CLI/releases/download/v0.1.51/telara_0.1.51_darwin_arm64.tar.gz"
-      sha256 "40fdb7b240d7cf4be8586d112ebf57d15feda3ab351cb19e4621c69ecf6a0ad4"
+      url "https://github.com/Telara-Labs/Telara-CLI/releases/download/v0.1.52/telara_0.1.52_darwin_arm64.tar.gz"
+      sha256 "14307d77b8f72003d6ada3e6f1f7f921a9e4710ff064aff1dd8d511f245d768a"
 
       define_method(:install) do
         bin.install "telara"
@@ -28,15 +28,15 @@ class Telara < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Telara-Labs/Telara-CLI/releases/download/v0.1.51/telara_0.1.51_linux_amd64.tar.gz"
-      sha256 "91bab24e9de20500b2a713a5d19e3801226c56a5f7a7817275f7ad912f3d8afd"
+      url "https://github.com/Telara-Labs/Telara-CLI/releases/download/v0.1.52/telara_0.1.52_linux_amd64.tar.gz"
+      sha256 "921d15d62b4aca04dee124d28fdb76b0ce061940cc80848ee3ebf7926979224a"
       define_method(:install) do
         bin.install "telara"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Telara-Labs/Telara-CLI/releases/download/v0.1.51/telara_0.1.51_linux_arm64.tar.gz"
-      sha256 "2e05300cc8447ce1d0aac0e6a92ab2a69c87b98e24efc59a2af5a50eb36ca5f2"
+      url "https://github.com/Telara-Labs/Telara-CLI/releases/download/v0.1.52/telara_0.1.52_linux_arm64.tar.gz"
+      sha256 "d7e83b53231fef2824934165d96acab72d18bc6b1ce94bdbf1cf4b1d50bbc828"
       define_method(:install) do
         bin.install "telara"
       end
